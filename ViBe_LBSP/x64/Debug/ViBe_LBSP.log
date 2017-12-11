@@ -1,0 +1,24 @@
+﻿生成启动时间为 2016/6/21 12:21:56。
+     1>项目“C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\ViBe_LBSP\ViBe_LBSP.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“x64\Debug\ViBe_LBSP.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Visual Studio 2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt ..\bgfg_segm.cpp
+         bgfg_segm.cpp
+       Link:
+         D:\Visual Studio 2010\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.exe" /NOLOGO opencv_ml2411d.lib opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_objdetect2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_nonfree2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_videostab2411d.lib opencv_objdetect2411.lib opencv_ts2411.lib opencv_video2411.lib opencv_nonfree2411.lib opencv_ocl2411.lib opencv_photo2411.lib opencv_stitching2411.lib opencv_superres2411.lib opencv_videostab2411.lib opencv_calib3d2411.lib opencv_contrib2411.lib opencv_core2411.lib opencv_features2d2411.lib opencv_flann2411.lib opencv_gpu2411.lib opencv_highgui2411.lib opencv_imgproc2411.lib opencv_legacy2411.lib opencv_ml2411.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\ViBe_LBSP.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.lib" /MACHINE:X64 x64\Debug\BackgroundSubtractorLBSP.obj
+         x64\Debug\BackgroundSubtractorSuBSENSE.obj
+         x64\Debug\bgfg_segm.obj
+         x64\Debug\LBSP.obj
+         LINK : 没有找到 C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.exe 或上一个增量链接没有生成它；正在执行完全链接
+         ViBe_LBSP.vcxproj -> C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\x64\Debug\ViBe_LBSP.exe;#1" /manifest x64\Debug\ViBe_LBSP.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\ViBe_LBSP.unsuccessfulbuild”。
+         正在对“x64\Debug\ViBe_LBSP.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\m\Desktop\新\22三\ViBe_LBSP仅RGB\ViBe_LBSP\ViBe_LBSP.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.65
