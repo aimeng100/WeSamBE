@@ -7,7 +7,7 @@
 #include <iomanip>
 
 /*
- *
+ ******************Note that the main alogrithm of WeSamBE is in this file. **************
  * Intrinsic parameters for our method are defined here; tuning these for better
  * performance should not be required in most cases -- although improvements in
  * very specific scenarios are always possible.
@@ -93,7 +93,7 @@ void BackgroundSubtractorSuBSENSE::initialize(const cv::Mat& oInitImg, const cv:
 			std::cout << std::endl << "\tBackgroundSubtractorSuBSENSE : Warning, grayscale images should always be passed in CV_8UC1 format for optimal performance." << std::endl;
 	}
 
-	//…œŒ™œ‘ æ;
+	//‰∏ä‰∏∫ÊòæÁ§∫;
 
 
 	cv::Mat oNewBGROI;
@@ -364,7 +364,7 @@ void BackgroundSubtractorSuBSENSE::operator()(cv::InputArray _image, cv::OutputA
 			ushort anCurrInterDesc[3], anCurrIntraDesc[3];
 			const size_t anCurrIntraLBSPThresholds[3] = {m_anLBSPThreshold_8bitLUT[anCurrColor[0]],m_anLBSPThreshold_8bitLUT[anCurrColor[1]],m_anLBSPThreshold_8bitLUT[anCurrColor[2]]};
 			LBSP::computeRGBDescriptor(oInputImg,anCurrColor,nCurrImgCoord_X,nCurrImgCoord_Y,anCurrIntraLBSPThresholds,anCurrIntraDesc);
-			m_oUnstableRegionMask.data[nPxIter] = ((*pfCurrDistThresholdFactor)>UNSTABLE_REG_RDIST_MIN || (*pfCurrMeanRawSegmRes_LT-*pfCurrMeanFinalSegmRes_LT)>UNSTABLE_REG_RATIO_MIN || (*pfCurrMeanRawSegmRes_ST-*pfCurrMeanFinalSegmRes_ST)>UNSTABLE_REG_RATIO_MIN)?1:0;//Õ≥º∆≤ªŒ»∂®«¯”Ú;
+			m_oUnstableRegionMask.data[nPxIter] = ((*pfCurrDistThresholdFactor)>UNSTABLE_REG_RDIST_MIN || (*pfCurrMeanRawSegmRes_LT-*pfCurrMeanFinalSegmRes_LT)>UNSTABLE_REG_RATIO_MIN || (*pfCurrMeanRawSegmRes_ST-*pfCurrMeanFinalSegmRes_ST)>UNSTABLE_REG_RATIO_MIN)?1:0;//ÁªüËÆ°‰∏çÁ®≥ÂÆöÂå∫Âüü;
 			size_t  nSampleIdx=0,  goodDist = 0,   sumeffectPix=0;
 			size_t  weightCoe=0; 
 			while( goodDist<m_nRequiredBGSamples && nSampleIdx<m_nBGSamples) {
@@ -565,7 +565,7 @@ void BackgroundSubtractorSuBSENSE::operator()(cv::InputArray _image, cv::OutputA
 				if((*pfCurrVariationFactor)<FEEDBACK_V_DECR)
 					(*pfCurrVariationFactor) = FEEDBACK_V_DECR;
 			}
-			if((*pfCurrDistThresholdFactor)<std::pow(1.0f+std::min(*pfCurrMeanMinDist_LT,*pfCurrMeanMinDist_ST)*2,2)) //************∞—2–ﬁ∏ƒ≥∆1.5;
+			if((*pfCurrDistThresholdFactor)<std::pow(1.0f+std::min(*pfCurrMeanMinDist_LT,*pfCurrMeanMinDist_ST)*2,2)) //************Êää2‰øÆÊîπÁß∞1.5;
 				(*pfCurrDistThresholdFactor) += FEEDBACK_R_VAR*(*pfCurrVariationFactor-FEEDBACK_V_DECR);
 			else {
 				(*pfCurrDistThresholdFactor) -= FEEDBACK_R_VAR/(*pfCurrVariationFactor);
