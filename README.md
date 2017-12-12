@@ -1,4 +1,4 @@
-# WeSamBE: A Weight-Sample-Based Method for Background Subtraction(https://rohitgirdhar.github.io/ActionVLAD/)
+# WeSamBE: A Weight-Sample-Based Method for Background Subtraction(https://github.com/aimeng100/WeSamBE)
 
 If this code helps with your work/research, please consider citing
 
