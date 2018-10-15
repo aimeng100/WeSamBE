@@ -6,6 +6,8 @@ Shengqin Jiang, Xiaobo Lu, WeSamBE: A Weight-Sample-Based Method for Background 
 IEEE Transactions on Circuits and Systems for Video Technology, 2018, 28(9):2105 - 2115.
 
 #######text#####################
+
+
 @article{jiang2017wesambe,
   title={WeSamBE: A weight-sample-based method for background subtraction},
   author={Jiang, Shengqin and Lu, Xiaobo},
